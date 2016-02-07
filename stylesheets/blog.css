@@ -1,0 +1,22 @@
+.blog {
+	display: inline-block;
+	margin: 20px 0px 10px 45px;
+	width: 75%;
+}
+
+#latest {
+	margin-left: 20px;
+	display: inline-block;
+	vertical-align: top;
+	width: 35%;
+	text-align: center;
+}
+
+#featured {
+	margin-left: 20px;
+	display: inline-block;
+	vertical-align: top;
+	width: 35%;
+	text-align: center;
+
+}

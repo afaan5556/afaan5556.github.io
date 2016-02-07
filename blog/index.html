@@ -1,31 +1,51 @@
 <!DOCTYPE HTML>
 <html>
 
-<head>
-<title>afaan5556.github.io/blog</title>
-</head>
+	<head>
+		<title>afaan5556.github.io/blog</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+		<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	</head>
 
 	<body>
-		<header> <!-- This is the horizontal header bar with navigation buttons and current page information -->
-			<h2>Blog</h2>
-			<nav><a href="../">Home</a> | <a href="#">About Me</a> | <a href="#">Projects</a> | <a href="">Blog</a> | <a href="afaan5556.github.io/blog">Contact</a></nav>
-			<hr />
+		<header>
+			<div id="location">Blog</div>
+			<nav>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="#">About Me</a></li>
+	          		<li><a href="#">Projects</a></li>
+	          		<li><a href="index.html">Blog</a></li>
+	          		<li><a href="#">Contact</a></li>
+	        	</ul>
+    	  	</nav>
+
 		</header> <!-- End of horizontal header bar -->
 
-			<aside> <!-- This is the left side-bar with links to other blogs -->
-				<img src="#" class="small" alt="blog_1"> <a href="git.html">git and <br>Github Reflections</a><br>
-				<img src="#" class="small" alt="blog_2"> <a href="#">UCB Campus <br>Energy Delivery</a><br>
-				<img src="#" class="small" alt="blog_3"> <a href="#">Calgary <br>Central Plant</a><br>
-				<img src="#" class="small" alt="blog_4"> <a href="#">Mission Rock <br>SF Giants</a><br>
-			</aside> <!-- End of the left side-bar -->
+		<aside> <!-- This is the left side-bar with links to other blogs -->
+			<img src="../imgs/GitHub-Mark-120px-plus.png" height=35px alt="blog_1"> <a href="git.html">git and <br>Github Reflections</a><br>
+			<img src="#" alt="blog_2"> <a href="#">UCB Campus <br>Energy Delivery</a><br>
+			<img src="#" alt="blog_3"> <a href="#">Calgary <br>Central Plant</a><br>
+			<img src="#" alt="blog_4"> <a href="#">Mission Rock <br>SF Giants</a><br>
+			<img src="imgs/DEF.JPG" height=35px> <a href="#">DEF</a><br>
+		</aside> <!-- End of the left side-bar -->
 
-		<h1> <!-- This is the main section of the body of the page -->
-			<a href="#"><img src="#" alt="Featured_Blog">Featured Blog</a> <!-- This is the image of the FEATURED blog on the index page with an embedded link to the blog page-->
-			<a href="#"><img src="#" alt="Latest_Blog">Latest Blog</a> <!-- This is the image of the LATEST blog on the index page with an embedded link to the blog page--> 
-		</h1>
-		<hr />
+		<div class="blog">
+			<div id="latest">
+				<img src="../imgs/GitHub-Mark-120px-plus.png" width=64% alt="Latest_Blog">
+				<h2>Latest Blog</h2>
+				<h4>Version Control Reflection</h4>
+			</div>
+			<div id="featured">
+				<img src="imgs/DEF.JPG" width=100% alt="Featured_Blog">
+				<h2>Featured Blog</h2>
+				<h4>District Energy Feasibility Tool</h4>
+			</div>
+		</div>
+
 		<footer> <!-- This is the horizontal footer bar with breadcrumbs and copyright information -->
-				<p><a href="../">Home ></a>  <a href="">Blog</a> | Built 2016 by Afaan Naqvi</p>
+				<p id="Bread_crumbs"><a href="../index.html">Home ></a> <a href="#"> Blog ></a>
+				<p id="Copyright">Built 2016 by Afaan Naqvi</p>
 		</footer>
 	
 	</body>
