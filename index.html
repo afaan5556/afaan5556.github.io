@@ -1,15 +1,13 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
-<head>
-	<title>afaan5556.github.io</title>
-	<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
-</head>
-
+	<head>
+		<title>afaan5556.github.io</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+	</head>
 	<body>
-
-		<header> <!-- This is the horizontal header bar with navigation buttons and current page information -->
-			<h2 class="Location">Home</h2>
+		<header>
+			<div id="location">Home</div>
+			
 			<nav>
 				<ul>
 					<li><a href="">Home</a></li>
@@ -19,38 +17,31 @@
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
-		</header> <!-- End of horizontal header bar -->
-
-
-		<div class="Main"> <!-- This is the space between the header and the footer-->
-			<aside> <!-- This is the left side-bar with the profile picture and the links to social media -->
+		</header>
+		<main>
+			<aside>
 				<img id="Profile_pic" src="imgs/Afaan.jpg" width=100%>
-				<ul class="Social_nav">
+				<ul>
+					<li><a href="mailto:afaan.naqvi@gmail.com"><img src="imgs/email.jpg" height=35px width=35px></a></li>
 					<li><a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button"><img src="imgs/In-Black-128px-TM.png" height=35px width=35px></a></li>
 					<li><a href="https://github.com/afaan5556"><img src="imgs/GitHub-Mark-120px-plus.png" height=35px width=35px></a></li>
-					<li><a href="mailto:afaan.naqvi@gmail.com"><img src="imgs/email.jpg" height=35px width=35px></a></li>
 					<li><a href="https://www.facebook.com/afaan.naqvi"><img src="imgs/FB-f-Logo__blue_1024.png" height=35px width=35px></a></li>
 				</ul>
 				<p>Find me up on social media, or reach out by e-mail. I would love to hear from you!</p>
-			</aside><!-- End of the left side-bar -->
-			
-			<div class="Blog_title">
-				<p id="Title"><b>FEATURED BLOG</b><p>
-				<p id="Small">Check out the District Energy Feasibility (DEF) tool for early planning stage energy considerations. Past clients include higher education, healthcare, and corporate campuses.</p>
+			</aside>
+
+			<div id="blog">
+				<div id="title">
+					<div id="topic">FEATURED BLOG</div>
+					<div id="text">The District Energy Feasibility (DEF) tool is used for early planning stage energy considerations. Past clients include higher education, healthcare, and corporate campuses.</div>
+				</div>
+				<div id="main"><a href="#"><img src="imgs/Featured_Blog.jpg" width=100%></a></div>
+				<p id="responsive">Link to attempt of week-2 <i>Responsive Design</i> bonus challenge <a href="https://github.com/afaan5556/afaan5556.github.io/tree/master/responsive-design">here.</p>
 			</div>
-			<h2 class="Main_content"> <!-- This is the main section of the body of the page -->
-				<a href="#"><img src="imgs/Featured_Blog.jpg" width=100%></a> <!-- This is the image of the featured blog on the index page with an embedded link to the feature blog page--> 
-				
-			</h2>
-			<p id="Responsive">Link to attempt of week-2 <i>Responsive Design</i> bonus challenge <a href="https://github.com/afaan5556/afaan5556.github.io/tree/master/responsive-design">here.</a></p>
-
-		</div>
-		
-
-		<footer> <!-- This is the horizontal footer bar with breadcrumbs and copyright information -->
-				<p id="Bread_crumbs"><a href="">Home > </a>
-				<p id="Copyright">Built 2016 by Afaan Naqvi</p>
+		</main>
+		<footer>
+			<p id="Bread_crumbs"><a href="">Home > </a>
+			<p id="Copyright">Built 2016 by Afaan Naqvi</p>
 		</footer>
-	
 	</body>
 </html>

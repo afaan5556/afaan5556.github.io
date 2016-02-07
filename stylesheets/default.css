@@ -1,42 +1,33 @@
-/* Header formatting starts here */
-
-body {
+* {
 	font-family: sans-serif;
 }
-header {
-	height: 60px;
-	display: inline-block;
-	width: 100%;
-	border-bottom: 2px solid black;
 
+header {
+	height: 100%;
+	margin-bottom: 10px;
+	border-bottom: solid black 2px;
 }
 
-.Location {
-	position: relative;
-	font-size: 4em;
-	float: left;
-	margin-left: 20px;
-	margin-top: -8px;
+#location {
+	display: inline-block;
+	font-size: 3em;
 }
 
 nav {
-	position: relative;
-	display: inline;
+	display: inline-block;
 	float: right;
-	margin-right: 30px;
-	font-size: 1.25em;
+	font-size: 80%;
 	text-align: center;
+	margin-top: 5px;
 }
 
 nav > ul > li  {
-	color: black;
 	display: inline-block;
-	padding: 1px 0px 1px 0px;
 	width: 100px;
 	margin: 3px;
-	margin-right: 12px;
 	border: 2px black solid;
 	border-radius: 4px;
+	padding: 2px;
 }
 
 nav > ul > li > a {
@@ -44,94 +35,80 @@ nav > ul > li > a {
 	color: black;
 }
 
-/* Main formatting starts here */
-
-.Main {
-	position: relative;
-}
-
 
 aside {
 	display: inline-block;
-	position: absolute;
-	margin-top: 25px;
-	width: 17%;
-	height: 90%;
-	border-right: double black 5px;
-	padding-right: 5px;
+	width: 15%;
+	margin-top: 10px;
+	vertical-align: top;
+	padding-right: 8px;
+	border-right: double black 6px;
+	padding-bottom: 90px;
 }
 
-.Social_nav {
-	position: relative;
-	list-style-type: none;
-	margin-left: -40px;
+aside > ul {
+	padding: 0px 0px 0px 8px;
 }
 
-.Social_nav > li {
-	position: relative;
+
+aside > ul > li  {
+	list-style: none;
 	display: inline-block;
-	padding: 0px;
-	margin-right: 6%;
+	padding: 0px 0px 0px 0px;
+	margin-right: 3%;
+	}
+
+#blog {
+	margin: 10px 1% 0px 1%;
+	display: inline-block;
+	width: 80%;
 }
 
-
-
-.Blog_title {
-	width: 18%;
+#title {
 	display: inline-block;
-	position: absolute;
-	left: 420px;
-	top: 15px;
-	padding: 0px 1px 0px 1px;
+	width: 30%;
+	margin-left: 10%
+}
+
+#topic {
+	font-size: 2em;
 	text-align: right;
-	margin: 0px;
+	padding: 2px;
 }
 
-.Blog_title > #Title {
-	font-size: 1.5em;
-	margin-bottom: 0px;
-}
-
-.Blog_title > #Small {
-	font-size: 0.75em;
-}
-
-.Main_content {
-	width: 45%;
-	display: inline-block;
-	position: relative;
-	margin-top: 25px;
-	left: 650px;
-	top: 0px;
-	border: black solid 2px;
+#text {
+	font-size: 85%;
 	text-align: right;
+	padding: 2px;
 }
 
-#Responsive {
+#main {
+	width: 58%;
+	border: solid gray 2px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#responsive {
 	text-align: right;
 }
-
-
-/* Footer formatting starts here */
 
 footer {
-	height: 30px;
+	width: 100%;
 	margin-bottom: 0px;	
-	border: black 10px solid black;
 	border-top: black solid 2px;
-	clear: both;
 }
 
 #Bread_crumbs {
-	position: relative;
+	position: static;
+	display: inline-block;
 	margin-left: 20px;
 	float: left;
-	display: inline-block;
 }
 
 #Copyright {
-	position: relative;
+	position: static;
+	display: inline-block;
 	margin-right: 20px;
 	float: right;
-	display: inline-block;
 }
