@@ -47,7 +47,7 @@ aside {
 }
 
 aside > ul {
-	padding: 0px 0px 0px 8px;
+	padding: 0px 0px 0px 5px;
 }
 
 
@@ -55,7 +55,7 @@ aside > ul > li  {
 	list-style: none;
 	display: inline-block;
 	padding: 0px 0px 0px 0px;
-	margin-right: 3%;
+	margin-right: 2%;
 	}
 
 #blog {
