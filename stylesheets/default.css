@@ -1,0 +1,114 @@
+* {
+	font-family: sans-serif;
+}
+
+header {
+	height: 100%;
+	margin-bottom: 10px;
+	border-bottom: solid black 2px;
+}
+
+#location {
+	display: inline-block;
+	font-size: 3em;
+}
+
+nav {
+	display: inline-block;
+	float: right;
+	font-size: 80%;
+	text-align: center;
+	margin-top: 5px;
+}
+
+nav > ul > li  {
+	display: inline-block;
+	width: 100px;
+	margin: 3px;
+	border: 2px black solid;
+	border-radius: 4px;
+	padding: 2px;
+}
+
+nav > ul > li > a {
+	text-decoration: none;
+	color: black;
+}
+
+
+aside {
+	display: inline-block;
+	width: 15%;
+	margin-top: 10px;
+	vertical-align: top;
+	padding-right: 8px;
+	border-right: double black 6px;
+	padding-bottom: 90px;
+}
+
+aside > ul {
+	padding: 0px 0px 0px 8px;
+}
+
+
+aside > ul > li  {
+	list-style: none;
+	display: inline-block;
+	padding: 0px 0px 0px 0px;
+	margin-right: 3%;
+	}
+
+#blog {
+	margin: 10px 1% 0px 1%;
+	display: inline-block;
+	width: 80%;
+}
+
+#title {
+	display: inline-block;
+	width: 30%;
+	margin-left: 10%
+}
+
+#topic {
+	font-size: 2em;
+	text-align: right;
+	padding: 2px;
+}
+
+#text {
+	font-size: 85%;
+	text-align: right;
+	padding: 2px;
+}
+
+#main {
+	width: 58%;
+	border: solid gray 2px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#responsive {
+	text-align: right;
+}
+
+footer {
+	width: 100%;
+	margin-bottom: 0px;	
+	border-top: black solid 2px;
+}
+
+#Bread_crumbs {
+	position: static;
+	display: inline-block;
+	margin-left: 20px;
+	float: left;
+}
+
+#Copyright {
+	position: static;
+	display: inline-block;
+	margin-right: 20px;
+	float: right;
+}

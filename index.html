@@ -1,38 +1,47 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
-<head>
-<title>afaan5556.github.io</title>
-</head>
-
+	<head>
+		<title>afaan5556.github.io</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+	</head>
 	<body>
-		<header> <!-- This is the horizontal header bar with navigation buttons and current page information -->
-			<h2>Home</h2>
-			<nav><a href="">Home</a> | <a href="#">About Me</a> | <a href="#">Projects</a> | <a href="blog/index.html">Blog</a> | <a href="#">Contact</a></nav>
-			<hr />
-		</header> <!-- End of horizontal header bar -->
+		<header>
+			<div id="location">Home</div>
+			
+			<nav>
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="#">About Me</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="blog/index.html">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<aside>
+				<img id="Profile_pic" src="imgs/Afaan.jpg" width=100%>
+				<ul>
+					<li><a href="mailto:afaan.naqvi@gmail.com"><img src="imgs/email.jpg" height=35px width=35px></a></li>
+					<li><a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button"><img src="imgs/In-Black-128px-TM.png" height=35px width=35px></a></li>
+					<li><a href="https://github.com/afaan5556"><img src="imgs/GitHub-Mark-120px-plus.png" height=35px width=35px></a></li>
+					<li><a href="https://www.facebook.com/afaan.naqvi"><img src="imgs/FB-f-Logo__blue_1024.png" height=35px width=35px></a></li>
+				</ul>
+				<p>Find me up on social media, or reach out by e-mail. I would love to hear from you!</p>
+			</aside>
 
-		<h2>
-			<p>Link to attempt of week-2 <i>Responsive Design</i> bonus challenge <a href="https://github.com/afaan5556/afaan5556.github.io/tree/master/responsive-design">here.</a></p>
-		</h2>
-
-			<aside> <!-- This is the left side-bar with the profile picture and the links to social media -->
-				<img src="imgs/Afaan.jpg" class="small" alt="Afaan">
-				<a href="https://www.facebook.com/afaan.naqvi"><img src="imgs/facebook.png" class="small" alt="facebook"></a>
-				<a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button"><img src="imgs/linkedin.png"  class="small" alt="linkedin"></a>
-				<a href="https://github.com/afaan5556"><img src="imgs/github.png" class="small" alt="github"></a>
-				<a href="mailto:afaan.naqvi@gmail.com"><img src="imgs/email.jpg" alt="envelope"></a>
-			<p>Look me up on social media, or reach out by e-mail. I would love to hear from you!
-			</p> 
-			</aside> <!-- End of the left side-bar -->
-
-		<h1> <!-- This is the main section of the body of the page -->
-			<a href="#"><img src="imgs/Featured_Blog.JPG" alt="Feature_Blog"></a> <!-- This is the image of the featured blog on the index page with an embedded link to the feature blog page--> 
-		</h1>
-		<hr />
-		<footer> <!-- This is the horizontal footer bar with breadcrumbs and copyright information -->
-				<p><a href="">Home > </a> | Built 2016 by Afaan Naqvi</p>
+			<div id="blog">
+				<div id="title">
+					<div id="topic">FEATURED BLOG</div>
+					<div id="text">The District Energy Feasibility (DEF) tool is used for early planning stage energy considerations. Past clients include higher education, healthcare, and corporate campuses.</div>
+				</div>
+				<div id="main"><a href="#"><img src="imgs/Featured_Blog.jpg" width=100%></a></div>
+				<p id="responsive">Link to attempt of week-2 <i>Responsive Design</i> bonus challenge <a href="https://github.com/afaan5556/afaan5556.github.io/tree/master/responsive-design">here.</p>
+			</div>
+		</main>
+		<footer>
+			<p id="Bread_crumbs"><a href="">Home > </a>
+			<p id="Copyright">Built 2016 by Afaan Naqvi</p>
 		</footer>
-	
 	</body>
 </html>
