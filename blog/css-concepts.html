@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+  <title>CSS Concepts</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<body>
+  <header>
+      <div id="location">Blog</div>
+      
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  <main>
+    <h1>CSS Concepts</h1>
+    <h2>Margin, Border, and Padding | A reflection</h2>
+    <h4>February 7, 2016</h4>
+  
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        There are 2 basic forces at work behind almost all websites you will visit in your day-to-day browsing. The first is HTML which is what designers use to write all of the <i>content</i> for the intended site, and the second is CSS (short for Cascading Style Sheets) which is what designers use to <i>style, display, position, and format</i> that content. This week I had a crash course introduction to the basics of CSS and I am sharing a reflection on one of its many facets.  
+      </p>
+      <div id="center">
+        <img src="http://i.stack.imgur.com/nNKHh.gif">
+      </div>
+      <p>
+        The above image represents the standard constructors that are native to each and every element on a wesite. The "<i>content</i>" ("Hello World" in the above image) of an element is what you routinely see on a web-page in the form of a string of text, an image, a link, a video etc. There are, however, 3 standard element constructors that you may not always see. These are:   
+      </p>
+      <ul>
+        <li>Margin</li>
+        <li>Border</li>
+        <li>Padding</li>
+      </ul>
+      <h2>Margin</h2>
+      <p>
+        Starting from the outside in, the first standard constructor of an element is its margin. The margin is the space that can be defined (in a number of pixels for example) and reserved around the extents of an element to essentially give that element some <strong>"breathing room" from other elements on the page.</strong> No other element<sup>1</sup> will be able to encroach on the space reserved as a margin for any other element.</p>
+      <p>CSS allows the specification of the top, bottom, left, and right margins individually so that any desired level of spacing can be accomplished for each element. The dashed line in the image above represents the extent of the margin for the illustrated "Hello World" element, even though you would not actually see a dashed line (or any line for that matter) on the actual web-page.</p>
+
+      <h2>Border</h2>
+      <p>Moving in a level from the margin, the next standard constructor of an element is its border. The border is something that you may actually routinely see when browsing because designers may turn on a color and a thickness for a desired effect.</p>
+      <p>
+       In the image above, the element border has been given a color (yellow), a certain thickness (if I were to venture a guess I'd say maybe 15 pixels) and an application on all sides (hence the "boxing in" of the content)</p>
+       <p>A border can, however, be applied to any number of sides of an element as defined by the user. A bottom-only border might be used to underline an element, while a right-only border might be used to provide a horizontal break between one element and the next in the same row.</p>
+
+      <h2>Padding</h2>
+      <p>
+        Moving in from the border, the next standard element constructor (and the last one before we get to the content that you actually see on a web-page) is the padding. If the margin is used to give an element "breathing room" from other elements, then the padding is used to create <strong>some breathing room between the element content and the element border.</strong> 
+      </p>
+      <p>Like the border and the margin, the width of the padding on the sides of the content, and the height of the padding above and below the content, can be specified by the user. Like the border, the color of the padding can also be specified. This is how a colored buttons can be accomplished for example.</p>
+      <p>In the image above the padding has not been given a color (or perhaps it has been given the color white) but it has been given an even width on all sides (perhaps again 15 pixels) to create some breathing room between the "Hello World" text and the yellow box-border.</p>
+
+      <h5>1. Under certain display and positioning circumstances, an element may still manage to "encroach" on the reserved margin space of another element (or onto the border, padding, and content space of another element for that matter.) An example of this is a <i>"fixed position"</i> element such as a menu bar that follows you as you scroll up and down a web-page.</h5>
+        <!-- copy and paste as many sections as you want to add paragraphs -->
+      </section>
+    </main>
+    <footer>
+      <p id="Bread_crumbs"><a href="../index.html">Home ></a> <a href="index.html"> Blog ></a> <a href="#"> Margin, Border, and Padding | A reflection</a>
+      <p id="Copyright">Built 2016 by Afaan Naqvi</p>
+    </footer>
+  </body>
+  </html>
+  
