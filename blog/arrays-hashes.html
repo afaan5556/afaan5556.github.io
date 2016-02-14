@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+  <title>Arrays and Hashes</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<body>
+  <header>
+      <div id="location">Blog</div>
+      
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  <main>
+    <h1>Hashes to Hashes</h1>
+    <h2>Reflecting on Arrays and Hashes</h2>
+    <h4>February 13, 2016</h4>
+  
+    <section>
+      <h3>Overview</h3>
+        <p>
+          This post aims to provide a simple yet memorable look at two powerful ruby objects, namely arrays and hashes. There are many differences and similarities between the two, and there are established use cases for when each should be used. But before getting into such trade-offs and details, it's helpful to understand what each is in the most basic sense.     
+        </p>
+      <h3>Arrays</h3>
+        <div>
+          <div id="left">
+            <p>It is no secret that we all love to talk about the weather. It is a subject that comes up when you share a 20 second elevator ride with that colleague from the 7th floor you rarely see, or when you find yourself alone with your siblings awkward in-laws at a family picnic. Whenever we do this, we are talking about a few climatic parameters such as temperature, wind-speed, and humidity. Each of these are ever-changing and while we are comfortable talking about them in passing and in the present tense, weather stations across the world collect and store a universe of historic climatic data.  
+            </p>
+            <p>
+              What do you think historic rainfall data looks like? It is typically an hourly reading of the volume of rainfall in the unit of inches. Whether we are talking about the overnight rainfall last Wednesday, or the rainfall for the entire month of December, the data stored by weather stations is in the form of inches/hour for every hour in the duration of interest. If you are wondering what a good way to store this data is, then you are already thinking about an array.
+            </p>
+          </div>
+          <img id="right" src="imgs/weather.png">
+        </div>
+        <p>
+          An array is basically a stored list of data. So, in the case of rainfall at any given location, an array could store all the hourly rainfall data recorded, ever! Similarly, a temperature array could store all the temperature data, and a humidity array could store all the humidity data. In computer (specifically Ruby) terms, an array for the temperature for the last 24 hours could be set up as follows:
+        </p>
+          <code>
+            <div id="html">
+              >> temp_last_12 = [11.4, 10.9, 8.6, 10.0, 12.5, 14.2, 15.8, 17.4, 18.5, 19.3, 20.2, 19.6]
+            </div>
+          </code>
+        </p>
+        <p>
+          Storing data in an array like this allows for easy access of the data using a variety of queries. For example, if we had access to the above array and were interested in knowing the temperature of only the first three hours and the last three hours within the 12 hour range, we could use the following commands:
+        </p>
+        <code>
+          <div id="html">
+         >> temp_last_12[0, 3] 
+         => [11.4, 10.9, 8.6] 
+         >> temp_last_12[-3, -1] 
+         => [19.3, 20.2, 19.6] 
+          </div>
+        <p>
+          Similarly, if we were interested in knowing how many hours the temperatures was above 18.0 degrees, we could use the following command:  
+        </p>
+        <code>
+          <div id="html">
+            >> (temp_last_12.find_all {|n| n > 18}).count <br>
+            => 4
+          </div >
+        <p> Now just imagine how easy it would be to get any weather of your choice, for any duration, with any upper and lower bounds, all because it was stored in a the convenient array object. Not to be overly-climatic (pun-intended) but it certainly helps me to think of a thermometer when I try to define an array. The thermometer only ever reads out 1 type of data (i.e. temperature) and an array is a great place to store that data! 
+        </p>
+        <h5>A note about the array/weather analogy</h5>
+        <p id="small">
+          While it is helpful for me to think of single-dimension data when I try to define an array, it is important to note that the elements stored in an array can also be strings, boolean values, and even other arrays. Below is an example of a perfectly legitimate mixed data-type, multi-dimensional array.
+        </p>
+        <code>
+          <div id="html">
+            >> [3, -4, false, [5, "five"], ["true", true, [false, 46]], "end_of_array"]
+          </div>
+        </code>
+
+
+      <h3>Hashes</h3>
+      <div>
+        <div id="left">
+          <p>
+            If like me you found it helpful to associate a thermometer with an array (hey, it works!), then you may also find it is useful to associate a dictionary with a hash. Yes a dictionary! This is because while we use a thermometer to tell us the temperature (and only the temperature), we use a dictionary to tell us the definition of whatever word we are looking up.
+          </p>
+          <p>
+            That may seem like a subtle difference, but it makes all the difference in the world of coding. A hash, like a dictionary, is filled with "key and value pairs." In a dictionary, the "keys" are the words, and the "values" are the definitions. In a hash, the "keys" can be set up to represent whatever we like (say statistic categories for your favorite sports team) and the values could be the corresponding data (say the statistics themselves.)
+          </p>
+          <p>
+            Lets take a look at how a hash would be used in the above example of sports team statistics. Below I am setting up a hash for my favorite soccer team: Bayern Munich!
+          </p>
+        </div>
+        <img src="imgs/dictionary.jpg" id="right">
+      </div>
+      <code>
+        <div id="html">
+        >> bayern_munich = { :home_jersey => "White", :away_jersy => "Red", :german_championships => 25, :euro_championships => 5, :fifa_club_winner => 1, :manager => "Pep Guardiola", :captain => "Philipp Lahm"}<br>
+        => bayern_munich{<br>  
+                          :home_jersey => "White",<br>
+                          :away_jersy => "Red",<br>
+                          :german_championships => 25,<br>
+                          :euro_championships => 5,<br>
+                          :fifa_club_winner => 1,<br>
+                          :manager => "Pep Guardiola",<br>
+                          :captain => "Philipp Lahm"<br>
+                        }
+      </div>
+      </code>
+      </p>
+      <p>
+        Retrieving or adding information to an array is as easy as it is to create one. Let's say I wanted to know how many German championships Bayern Munich has won, and who their current captain is. This could be achieved with the following code.
+      </p>
+      <code>
+          <div id="html">
+          >> bayern_munich[german_championships]<br>
+          => 25<br>
+          >> bayern_munich[captain]<br>
+          => Philipp Lahm
+        </div>
+      </code>
+      <p>
+        Let's say Bayern Munich lift the Champions League trophy this year (fingers crossed), and we wanted to add data for the number of team yellow cards to the hash. In that case our hash would need some updating which is also easy to do (perhaps unlike an actual dictionary!) Both these changes could be achieved with the following code.
+      </p>
+        <code>
+          <div id="html">
+          >> bayern_munich[euro_championships] = 6<br>
+          => 6<br>
+          >> bayern_munich[yellow_cards] = 17<br>
+          => 17
+        </div>
+      </code>
+      <p>
+        At this point our hash would be updated with the new Champions league count, as well as with an entirely new field that tracks the number of team yellow cards.
+      </p>
+      <h3>Conclusion</h3>
+      <p>
+        The array and the hash are both extremely powerful ruby objects. Other programming languages such as Python and Javascript have similar objects that go by different names, but their purpose and benefits are the same. With dozens of built-in Ruby methods that can be applied to arrays and hashes, their proper set-up and use can make data management and querying a dream. The basic analogies in this post helped me keep them straight when I first dove in and started using them, and I am pretty excited to be diving deeper next week. See you on the other side (if it doesn't rain!) 
+      </p>
+
+        <!-- copy and paste as many sections as you want to add paragraphs -->
+      </section>
+    </main>
+    <footer>
+      <p id="Bread_crumbs"><a href="../index.html">Home ></a> <a href="index.html"> Blog ></a> <a href=""> Hashes to Hashes</a>
+      <p id="Copyright">Built 2016 by Afaan Naqvi</p>
+    </footer>
+  </body>
+  </html>
+  
