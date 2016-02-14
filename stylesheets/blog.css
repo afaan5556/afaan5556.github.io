@@ -10,6 +10,28 @@ main {
 	background-color: #bfbfa6;
 }
 
+#html {
+	background-color: black;
+	color: white;
+	padding: 5px 15px 5px 15px;
+	font-family: times	;
+	line-height: 35px;
+}
+
+#left {
+	display: inline-block;
+	width: 68%;
+}
+
+#right {
+	display: inline-block;
+	float: right;
+	width: 29%;
+	padding-top: 20px;
+}
+
+
+
 #latest {
 	margin-left: 20px;
 	display: inline-block;
@@ -39,4 +61,8 @@ main {
 aside {
 	padding-bottom: 220px;
 	margin-bottom: 20px;
+}
+
+#small {
+	font-size: 12px;
 }
