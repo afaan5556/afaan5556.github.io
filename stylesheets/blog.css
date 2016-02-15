@@ -66,3 +66,7 @@ aside {
 #small {
 	font-size: 12px;
 }
+
+#blog-footer {
+	position: static;
+}
