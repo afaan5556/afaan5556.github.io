@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+  <title>Enumerable Methods</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<body>
+  <header>
+      <div id="location">Blog</div>
+      
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  <main>
+    <h1>Enumerable#Map | The Powerful Cousin of Each</h1>
+    <h2>Operating on Collections</h2>
+    <h4>February 20, 2016</h4>
+  
+    <section>
+      <h3>Introduction to Enumerables</h3>
+      <p>
+        Just when I thought I was starting to get comfortable with the classes and methods I had seen till this week, we were hit with Enumerables! After spending too much time thinking about whether the word "enumerable" sounds funny or not, I did however dive into what it was and came away with many useful, and some quite intuitive lessons.  
+      </p>
+      <p>
+        The Well Grounded Rubyist introduces the concept of Enumerables as a "characteristic of collection objects" that allow for various useful collection behaviors. That part sounded really great, but the book then went on to talk about how classes that <i>use Enumerable</i> "enter into a kind of contract," which made me think of this.
+      </p>
+      <img src="imgs/shady-deal.jpg">
+      <p>
+        However, thinking of <i>Enumerables</i> in terms of a contract is handy. The class that declares the use of <i>Enumerable</i> has to define an instance method <i>each</i>, and in return, <i>Enumerable</i> makes available the collection class behaviors that sounded so promising. These "behaviors" range from traversal and searching methods, to sorting and mapping methods.
+      </p>
+      <p>
+        What this means is that when we declare <i>Enumerable</i> as part of an object class (which in turn defines what the method <i>each</i> does for that particular class) we gain the ability to perform various operations to each element in the class one-by-one. Below is an example of how this <i>contract</i> might play out at our local taqueria.
+      </p>
+        <code>
+          <div id="html">
+            class Taco<br>
+              include Enumerable<br>
+              def each<br>
+              yield "tortilla"<br>
+              yield "meat"<br>
+              yield "beans"<br>
+              yield "salsa"<br>
+            end<br>
+          end
+          </div>
+        </code>
+      <h3>Enumerable#map</h3>
+      <p>
+        Of the many "collection behaviors" that become accessible as a result of declaring Enumerable, <i>map</i> is one of the most powerful. In fact, in the week or so that I have been dabbling with Enumerables to solve various coding challenges, I have used map and map! (the in-place version of map) the most.
+      </p>
+      <p>
+        When map is called on a collection/Enumerable, it returns an array consisting of the results of the operation that was passed to map. Below is an example of how this might work if we were super hungry when ordering a taco.
+      </p>
+      <code>
+          <div id="html">
+            >> taco = ["tortilla", "meat", "beans", "salsa"]<br>
+            => ["tortilla", "meat", "beans", "salsa"]<br>
+            >> taco.map { |ingredient| "super-" + ingredient }<br>
+            => ["super-tortilla", "super-meat", "super-beans", "super-salsa"]
+          </div>
+      </code>
+      <p>
+        In addition to being a handy fast-food-meal-up-sizer, Enumerabl#map is helpful when coding as it returns a new object that is the result of the intended operation. This is different than <i>each</i> which returns the receiver of the operation. This is a useful way to perform and return operations on any collection object (not just an array as in the above example) so that the results can be returned and/or passed on to additional steps of code.
+      </p>
+      <p>
+        This also means that map does not alter the received collection (i.e. it is non-destructive). This can be demonstrated by calling our original "taco" array which returns a regular (non-super-sized) taco. 
+      </p>
+      <code>
+          <div id="html">
+            >> taco<br>
+            => ["tortilla", "meat", "beans", "salsa"]<br>
+          </div>
+      </code>
+      <h3>In Closing</h3>
+      <p>
+        Enuerables give us the ability to search, sort, and more generally "traverse" the various elements of a collection object, doing something each time. If you are still performing such operations using while and/or for loops with nested control flow logic, check out Enumerables and you will see ways to collapse your code ten-fold. Enjoy!
+      </p>
+
+        <!-- copy and paste as many sections as you want to add paragraphs -->
+      </section>
+    </main>
+    <footer id="blog-footer">
+      <p id="Bread_crumbs"><a href="../index.html">Home ></a> <a href="index.html"> Blog ></a> <a href=""> Title of blog post</a>
+      <p id="Copyright">Built 2016 by Afaan Naqvi</p>
+    </footer>
+  </body>
+  </html>
+  
