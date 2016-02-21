@@ -1,11 +1,20 @@
+/*
+#21759b	(33,117,155)
+#d54e21	(213,78,33)
+#464646	(70,70,70)
+#f7f7f7	(247,247,247)
+#ffffff	(255,255,255)
+	font-family: 'Roboto Condensed', sans-serif;
+*/
+
 * {
-	font-family: sans-serif;
+	font-family: 'Varela Round', sans-serif; 
 }
 
 header {
 	height: 100%;
 	margin-bottom: 10px;
-	border-bottom: solid black 2px;
+	background-color: #21759b;
 }
 
 #Profile_pic {
@@ -15,28 +24,28 @@ header {
 #location {
 	display: inline-block;
 	font-size: 3em;
+	color: #ffffff;
+	padding: 5px 10px 5px 10px;
 }
 
 nav {
 	display: inline-block;
 	float: right;
-	font-size: 80%;
+	font-size: 100%;
 	text-align: center;
 	margin-top: 5px;
 }
 
 nav > ul > li  {
 	display: inline-block;
-	width: 100px;
+	width: 80px;
 	margin: 3px;
-	border: 2px black solid;
-	border-radius: 4px;
 	padding: 2px;
 }
 
 nav > ul > li > a {
 	text-decoration: none;
-	color: black;
+	color: #ffffff;
 }
 
 
@@ -101,20 +110,27 @@ footer {
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
-	margin-bottom: 0px;	
-	border-top: black solid 2px;
+	margin-bottom: 0px;
+	background-color: #f7f7f7;
+	color: black;
 }
+
 
 #Bread_crumbs {
 	position: static;
 	display: inline-block;
 	margin-left: 20px;
 	float: left;
+	color: #ffffff;
 }
 
+#Bread_crumbs > a:visited {
+	color: black;
+}
 #Copyright {
 	position: static;
 	display: inline-block;
 	margin-right: 20px;
 	float: right;
+	color: black;
 }

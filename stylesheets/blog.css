@@ -1,8 +1,4 @@
-.blog {
-	display: inline-block;
-	margin: 20px 0px 10px 45px;
-	width: 75%;
-}
+
 
 main {
 	margin: 60px 10% 60px 10%;
@@ -30,22 +26,28 @@ main {
 	padding-top: 20px;
 }
 
-
-
-#latest {
-	margin-left: 20px;
+#blog-tile {
 	display: inline-block;
-	vertical-align: top;
-	width: 35%;
+	vertical-align: bottom;
+	width: 30%;
 	text-align: center;
+	margin-right: 20px;
 }
 
-#featured {
-	margin-left: 20px;
-	display: inline-block;
-	vertical-align: top;
-	width: 35%;
-	text-align: center;
+#blog-tile > h3 > a:link {
+	text-decoration: none;
+	padding: 5px 15px 5px 15px;
+	border-radius: 30px;
+	background-color: #21759b;
+}
+
+#blog-tile > h3 > a:visited {
+	color: #ffffff;
+}
+
+
+#blog-image {
+	width: 75%;
 }
 
 #center {
@@ -69,4 +71,6 @@ aside {
 
 #blog-footer {
 	position: static;
+	height: 50px;
+	background-color: #f7f7f7;
 }
