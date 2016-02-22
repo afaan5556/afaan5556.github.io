@@ -29,6 +29,7 @@ main {
 	padding: 5px 15px 5px 15px;
 	border-radius: 30px;
 	background-color: #21759b;
+	color: white;
 }
 
 #blog-tile > h3 > a:visited {
