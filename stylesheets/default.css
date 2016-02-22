@@ -38,9 +38,8 @@ nav {
 
 nav > ul > li  {
 	display: inline-block;
-	width: 80px;
 	margin: 3px;
-	padding: 2px;
+	padding: 2px 7px 2px 7px;
 }
 
 nav > ul > li > a {
@@ -91,7 +90,7 @@ form {
 }
 
 #contact_spread {
-	width: 57%;
+	width: 55%;
 	display: inline-block;
 	float: right;
 }	
