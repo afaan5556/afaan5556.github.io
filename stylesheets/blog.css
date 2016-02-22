@@ -14,17 +14,7 @@ main {
 	line-height: 35px;
 }
 
-#left {
-	display: inline-block;
-	width: 68%;
-}
 
-#right {
-	display: inline-block;
-	float: right;
-	width: 29%;
-	padding-top: 20px;
-}
 
 #blog-tile {
 	display: inline-block;
@@ -34,7 +24,7 @@ main {
 	margin-right: 20px;
 }
 
-#blog-tile > h3 > a:link {
+#blog-tile > h3 > a:link {	
 	text-decoration: none;
 	padding: 5px 15px 5px 15px;
 	border-radius: 30px;
@@ -61,8 +51,8 @@ main {
 }
 
 aside {
-	padding-bottom: 172px;
-	margin-bottom: 20px;
+	padding-bottom: 10%;
+	margin-bottom: 10%;
 }
 
 #small {
