@@ -77,8 +77,8 @@ aside > ul > li  {
 }
 
 form {
-	padding: 5px 5px 5px 20px;
-	width: 22%;
+	padding: 5px 5px 5px 15px;
+	width: 23%;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -90,7 +90,7 @@ form {
 }
 
 #contact_spread {
-	width: 55%;
+	width: 54%;
 	display: inline-block;
 	float: right;
 }	
