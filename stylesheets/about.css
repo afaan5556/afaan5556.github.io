@@ -1,0 +1,67 @@
+/*
+#21759b	(33,117,155)
+#d54e21	(213,78,33)
+#464646	(70,70,70)
+#f7f7f7	(247,247,247)
+#ffffff	(255,255,255)
+	font-family: 'Roboto Condensed', sans-serif;
+*/
+
+/*____Head Shot Section Styles______*/
+
+#head_shot {
+	padding: 30px 0px 30px 30px;
+	width: 50%;
+}
+
+#head_shot > img {
+	width: 30%;
+	border-radius: 100%;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+#bio {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 30px;
+}
+
+#bio > h3 {
+	margin: 0px;
+}
+
+#bio > p {
+	padding: 5px 0px 5px 0px;
+	font-size: 0.8em;
+	margin: 0px 0px 0px 0px;
+	line-height: 1px;
+}
+
+/*____Where I am From Section Styles______*/
+
+#where {
+	background-color: #d54e21;
+	margin-bottom: 80px;
+}
+
+#where > img {
+	width: 70%;
+	margin-bottom: -4px;
+}	
+
+#from {
+	padding: 30px 20px 30px 20px;
+	color: #ffffff;
+	display: inline-block;
+	width: 25%;
+	line-height: 1.5em;
+	float: right;
+}
+
+/*____Education Experience Section Styles______*/
+
+
+#education > h3 {
+	padding-left: 30px;
+}
