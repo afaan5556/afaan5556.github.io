@@ -13,7 +13,6 @@
 
 header {
 	height: 100%;
-	margin-bottom: 10px;
 	background-color: #21759b;
 }
 
@@ -51,11 +50,10 @@ nav > ul > li > a {
 aside {
 	display: inline-block;
 	width: 15%;
-	margin-top: 10px;
 	vertical-align: top;
-	padding-right: 8px;
 	border-right: double black 6px;
 	padding-bottom: 5%;
+	padding-right: 5px;
 }
 
 aside > ul {
@@ -71,26 +69,25 @@ aside > ul > li  {
 	}
 
 #blog {
-	margin: 10px 1% 20px 1%;
+	margin: 25px 1% 20px 1%;
 	display: inline-block;
 	width: 80%;
 }
 
+
 form {
 	padding: 5px 5px 5px 15px;
-	width: 23%;
+	width: 20%;
 	display: inline-block;
 	vertical-align: top;
 }
 
 #home_spread {
-	width: 85%;
-	display: inline-block;
-	margin-left: 18%;
+	width: 100%;
 }
 
 #contact_spread {
-	width: 54%;
+	width: 62%;
 	display: inline-block;
 	float: right;
 }	
@@ -144,12 +141,17 @@ form {
 }
 
 footer {
-	position: absolute;
-	bottom: 0px;
 	width: 100%;
-	margin-bottom: 0px;
 	background-color: #f7f7f7;
 	color: black;
+	height: 55px;
+}
+
+.footer_bottom {
+	position: absolute;
+	bottom: 0px;
+	background-color: #f7f7f7;
+	width: 100%;
 }
 
 
