@@ -96,12 +96,14 @@ margin-bottom: 80px;
 /*____HOBBIES STYLE SECTION_______*/
 
 #hobbies {
+	width: 100%;
 }
 
-#hobbies > img {
-	width: 70%;
-	display: inline-block;
-}	
+#bake {
+	width: 100%;
+	margin-bottom: 80px;
+	height: 300px;
+}
 
 #interests {
 	padding: 0px 20px 0px 20px;
@@ -115,7 +117,6 @@ margin-bottom: 80px;
 #hobby_tiles {
 	display: inline-block;
 	width: 70%;
-	margin-bottom: 80px;
 }
 
 #hobby_tiles > img {
@@ -125,11 +126,6 @@ margin-bottom: 80px;
 	padding-left: 2%;
 }
 
-#bake {
-	margin-bottom: 80px;
-	height: 300px;
-	width: 100%;
-}
 
 
 /*____Something Quirky Styles______*/
