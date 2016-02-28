@@ -96,7 +96,6 @@ margin-bottom: 80px;
 /*____HOBBIES STYLE SECTION_______*/
 
 #hobbies {
-	margin-bottom: 80px;
 }
 
 #hobbies > img {
@@ -126,6 +125,11 @@ margin-bottom: 80px;
 	padding-left: 2%;
 }
 
+#bake {
+	margin-bottom: 80px;
+	height: 300px;
+	width: 100%;
+}
 
 
 /*____Something Quirky Styles______*/
