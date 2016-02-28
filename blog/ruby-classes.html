@@ -49,15 +49,20 @@
       </p>
       <p>Based on these principals, the code snippet below can be used to set up a basic visa_application class.</p>
 
-        <code>
-          <div id="html">
-            class visa_application<br>
-              def initialize(application_number)<br>
-              @application_number = application_number<br>
-              end<br>
-              end<br>
-          </div>
-        </code>
+        <blockquote>
+          <pre>
+            <code>
+            <div id="html">
+            class visa_application
+              def initialize(application_number)
+                @application_number = application_number
+              end
+            end
+            </div>
+            </code>
+
+          </pre>
+        </blockquote>
         <p>The code above is declaring a class of the type "visa_application" and it is <i>initializing</i> it with an application number (a unique number that is associated with each unique visa applications). That all makes sense, but what is the "@applciation_number" all about? The answer is "instance variables."</p>
         <h3>Instance Variables</h3>
         <p>Just like in the integer and Jetta examples above, each unique visa application is going to be an <i>instance</i> of the class "visa_application." Object and instance are used somewhat interchangeably and mean the same thing in this context.</p>
@@ -67,32 +72,37 @@
         <p>It's great that our visa_application class now allows us to create new instances of the visa_application class (or simply put, unique visa applications) but that's all it does so far. What if we wanted the class to also generate and manipulate some information pertaining to the particular application in question? This is where instance methods come in to play.
         </p>
         <p>The code below shows how the visa_application class could be supplemented with an <i>"instance method"</i> called "visa_duration". The intent of this method would be to return the visa duration (in this example, the first 2 digits of the visa application number, in months) when called as a method on <i>any</i> instance of the visa_application class.</p>
-        <code>
-          <div id="html">
-            class visa_application<br>
-              def initialize(application_number)<br>
-              @application_number = application_number<br>
-              end<br>
-              <br>
-              def visa_duration<br>
-              @application_number.to_s.slice(0..1)<br>
-              end<br>
-              <br>
-              end<br>
-          </div>
-        </code>
+        <blockquote>
+          <pre>
+
+            <code>
+              <div id="html">
+                class visa_application
+                  def initialize(application_number)
+                    @application_number = application_number
+                  end
+                  def visa_duration
+                    @application_number.to_s.slice(0..1)
+                  end
+                end
+              </div>
+            </code>
+          </pre>
+        </blockquote>
         <p>Notice how the instance variable @application_number is used inside the visa_duration method. This works because <i>each instance</i> of the visa_application class has access to it's own instance of this application number, and to the subsequent instance methods that are called on it.</p>
 
       <h3>Creating Class Instances and Calling Instance Methods</h3>
       <p>We now have a class that can be used to generate visa applications, and we can call a method on any generated visa application to figure out how long the visa is valid for. Below is the code we can use to implement these two steps.</p>
-      <code>
+      <blockquote><pre>
+
           <div id="html">
-            afaan_visa = visa_application.new(06875467360627)<br>
-            p afaan_visa.visa_duration<br>
-            => 06<br>
+            afaan_visa = visa_application.new(06875467360627)
+            p afaan_visa.visa_duration
+            => 06
             <i># A 6 month visa duration was returned for my visa application number</i>
           </div>
         </code>
+      </pre></blockquote><code>
         <p>The power of using classes is that from this point, we could add more and more instance methods to the visa_applciation class to read-in, calculate, create, and return more relevant data about the visa application. This is of course why I am so flustered by how long it is taking for me to get my visa processed and my passport returned to me. The nice thing though is that this blog took a pretty long time too, and it looks like my passport has been delivered since I started writing it! 
         </p>
         <img src="imgs/delivered.jpg">
