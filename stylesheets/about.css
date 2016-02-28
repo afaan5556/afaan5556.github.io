@@ -7,6 +7,10 @@
 	font-family: 'Roboto Condensed', sans-serif;
 */
 
+section > img {
+	width: 100%;
+}
+
 /*____Head Shot Section Styles______*/
 
 #head_shot {
@@ -61,7 +65,95 @@
 
 /*____Education Experience Section Styles______*/
 
-
-#education > h3 {
-	padding-left: 30px;
+#education {
+margin-bottom: 80px;
 }
+
+#schooling {
+	padding-left: 30px;
+	width: 25%;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+#school_chronology {
+	display: inline-block;
+	width: 70%;
+	vertical-align: top;
+}
+
+#school_tile {
+	display: inline-block;
+	width: 24%;
+	text-align: center;
+	padding-top: 35px;
+}
+
+#school_image {
+	height: 85px;
+}
+
+/*____HOBBIES STYLE SECTION_______*/
+
+#hobbies {
+	margin-bottom: 80px;
+}
+
+#hobbies > img {
+	width: 70%;
+	display: inline-block;
+}	
+
+#interests {
+	padding: 0px 20px 0px 20px;
+	display: inline-block;
+	width: 25%;
+	line-height: 1.5em;
+	float: right;
+	text-align: top;
+}
+
+#hobby_tiles {
+	display: inline-block;
+	width: 70%;
+	margin-bottom: 80px;
+}
+
+#hobby_tiles > img {
+	display: inline-block;
+	height: 220px;
+	width: 31%;
+	padding-left: 2%;
+}
+
+
+
+/*____Something Quirky Styles______*/
+
+#quirky {
+	background-color: #21759b;
+	margin-bottom: 80px;
+	height: 100%;
+	display: inline-block;
+}
+
+#quirky_from {
+	padding: 30px 20px 30px 20px;
+	color: #ffffff;
+	width: 25%;
+	line-height: 1.5em;
+	height: 100%;
+}
+
+#quirky > img {
+	width: 70%;
+	display: inline-block;
+	float: right;
+	vertical-align: top;
+}	
+
+
+
+
+
+
