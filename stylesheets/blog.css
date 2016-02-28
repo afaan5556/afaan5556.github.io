@@ -36,9 +36,12 @@ main {
 	color: #ffffff;
 }
 
+section > img {
+	width: 100%;
+}
 
 #blog-image {
-	width: 75%;
+	width: 60%;
 }
 
 #center {
