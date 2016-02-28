@@ -102,7 +102,10 @@ margin-bottom: 80px;
 #bake {
 	width: 100%;
 	margin-bottom: 80px;
-	height: 300px;
+}
+
+#bake > img {
+	width: 100%
 }
 
 #interests {
