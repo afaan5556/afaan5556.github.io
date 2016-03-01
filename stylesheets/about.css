@@ -105,7 +105,8 @@ margin-bottom: 80px;
 }
 
 #bake > img {
-	width: 100%
+	width: 100%;
+	height:375px;
 }
 
 #interests {
@@ -125,7 +126,7 @@ margin-bottom: 80px;
 #hobby_tiles > img {
 	display: inline-block;
 	height: 220px;
-	width: 31%;
+	width: 29%;
 	padding-left: 2%;
 }
 
