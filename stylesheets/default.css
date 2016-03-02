@@ -127,6 +127,10 @@ form {
 	float: right;
 }	
 
+#contact_spread > img {
+	width: 100%;
+}
+
 
 /*____START BLOG PAGE STYLES______*/
 
