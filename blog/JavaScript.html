@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+  <title>JavaScript</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<body>
+  <header>
+      <div id="location">Blog</div>
+      
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="../about.html">About Me</a></li>
+          <li><a href="../projects/index.html">Projects</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  <main>
+    <h1>Ruby Hashes vs JavaScript Objects</h1>
+    <h2>A JavaScript Reflection</h2>
+    <h4>March 5, 2016</h4>
+  
+    <section>
+      <h3>Introduction</h3>
+      <p>
+        As part of a crash-course into JavaScript this week, we learned about the JavaScript data structure that provides the same function as the Ruby hash. Called an "object," this JavaScript data structure is also set up and populated in a similar manner to Ruby.
+      </p>
+      <h3>Creating and Populating JavaScript Objects</h3>
+      <p>
+        Like a Ruby hash, JavaScript object is a list of property and associated value pairs, stored inside a pair of curly braces. The JavaScript object also allows for literal creation, and the adding of property/value pairs using syntax not too dissimilar than that used by Ruby as illustrated in the following example.
+      </p>
+      <blockquote>
+          <pre>
+            <code>
+            <div id="html">
+            new_object = {};
+            => {}
+            new_object["property_1"] = "Hide";
+            => "Hide"
+            new_object["property_2"] = "Seek";
+            => "Seek"
+            new_object
+            => {property_1: "Hide", property_2: "Seek"}
+            new_object.property_1
+            => "Hide"
+            new_object["property_2"]
+            => "Seek"
+            </div>
+            </code>
+          </pre>
+        </blockquote>
+        <h3>Accessing and Deleting JavaScript Objects</h3>
+        <p>There are 2 methods in which a property/value pair can be accessed and/or changed in JavaScript. These methods are known as the "dot-notation" and the "bracket-notation" and are illustrated in the following example.
+        </p>
+        <blockquote>
+          <pre>
+            <code>
+            <div id="html">
+            new_object.property_1
+            => "Hide"
+            new_object["property_2"]
+            => "Seek"
+            new_object.property_1 = "Sewing Machines"
+            => "Sewing Machines"
+            new_object.property_1
+            => "Sewing Machines"
+            new_object
+            => {property_1: "Sewing Machines", "Seek"}
+            </div>
+            </code>
+          </pre>
+        </blockquote>
+      <p>
+        Notice how the bracket-notation method expects the property as a string even though the returned object displays the property without a pair of quotes. JavaScript will throw an error if the property name is not provided as a string when using the bracket notation, and there is no Ruby-symbol-like data structure that can be used in JavaScript to get around this rather peculiar behavior. 
+      </p>
+      <p>
+        The Syntax used to delete a single property/value pair or a JavaScript object altogether is also slightly different than that used by Ruby:
+      </p>
+      <blockquote>
+          <pre>
+            <code>
+            <div id="html">
+            delete new_object.property_1
+            => true
+            new_object
+            => {property_2: "Sewing Machines"}
+            delete new_object
+            => true
+            new_object
+            => Error!
+            </div>
+            </code>
+          </pre>
+        </blockquote>
+       <!-- copy and paste as many sections as you want to add paragraphs -->
+       <p>The <i>delete new_object</i> command in this case did not just get rid of the last remaining property/value pair (i.e. property_2: "Seek") leaving behind an empty object (i.e. {}), it deleted the object <i>new_object</i> entirely. This is why an error is returned subsequently when the <i>new_object</i> is passed as a command. 
+       </p>
+       <h3>Conclusion</h3>
+       <p>The need to store keys (or properties as JavaScript calls them) and corresponding values is a fairly universal coding requirement. The Python equivalent to a Ruby hash and a JavaScript object is called a <i>dictionary</i> and it allows for the same creation, population, access, and deletion functionality as do Ruby and JavaScript.</p>
+       <p>If JavaScript is the first language you are dabbling in, the object may seem a little peculiar and may take some getting used to in practice. Coming from a few weeks of dealing with hashes in Ruby, this was not the case for me, and so I encourage you to stick with it and you will surely see the power and usefulness of the object data structure. Good luck!
+       </p>
+      </section>
+    </main>
+    <footer id="blog-footer">
+      <p id="Bread_crumbs"><a href="../index.html">Home ></a> <a href="index.html"> Blog ></a> <a href=""> A JavaScript Reflection</a>
+      <p id="Copyright">Built 2016 by Afaan Naqvi</p>
+    </footer>
+  </body>
+  </html>
+  
