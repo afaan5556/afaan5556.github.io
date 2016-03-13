@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>afaan5556.github.io/projects/cheat-sheet</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/cheat-sheet.css">
+	</head>
+
+	<body>
+		<header>
+			<div id="location">Projects</div>
+			<nav>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../about.html">About Me</a></li>
+	          		<li><a href="index.html">Projects</a></li>
+	          		<li><a href="../blog/index.html">Blog</a></li>
+	          		<li><a href="../contact.html">Contact</a></li>
+	        	</ul>
+    	  	</nav>
+
+		</header> <!-- End of horizontal header bar -->
+
+		<section id="string_container">
+			<h2>Strings</h2>
+			<p>A Ruby string is a series of characters. A string can be created by invoking the String object, or using the literal notation:</p>
+			<blockquote>
+				<pre>
+					<code>
+						> string_1 = "This is a literal string"
+						=> "This is a literal string"
+						> string_2 = String::new("This is a class invoked string")
+						=> "This is a class invoked string"
+					</code>
+				</pre>
+			</blockquote>
+			<p>Strings in Ruby can be added together or <i>"concatenated"</i> to form new strings:</p>
+			<blockquote>
+				<pre>
+					<code>
+						> string_3 = string_1 + " and" + string_2
+						=> "This is a literal string and This is a class invoked string"
+					</code>
+				</pre>
+			</blockquote>
+			<p>Ruby strings are not limited to text characters, and can include numbers:</p>
+			<blockquote>
+				<pre>
+					<code>
+						> string_4 = "99 red balloons"
+						=> "99 red balloons"
+					</code>
+				</pre>
+			</blockquote>
+			<p>The <code>to_s</code> method can be used to convert non-string objects into strings, and the <code>is_a?(String)</code> method can be used to check whether an object is a string:</p>
+			<blockquote>
+				<pre>
+					<code>
+						> number_1 = 99
+						=> 99
+						> number_1.is_a?(String)
+						=> False
+						> string_5 = number_1.to_s
+						=> "99"
+						> string_5.is_a?(String)
+						=> True
+					</code>
+				</pre>
+			</blockquote>
+		</section>
+		<section id="integer_container">
+			<h2>Integers</h2>
+			<p>A Ruby Integer is a whole number. An integer is created using the literal notation:</p>
+			<blockquote>
+				<pre>
+					<code>
+						> integer_1 = 41
+						=> 41
+						> integer_2 = 14
+						=> 14
+					</code>
+				</pre>
+			</blockquote>
+			<p>Basic arithmetic operations can be performed on Ruby Integers:</p>
+			<blockquote>
+				<pre>
+					<code>
+						> integer_1 + integer_2
+						=> 55
+						> integer_1 - integer_2
+						=> 27
+						> integer_1 * integer_2
+						=> 574
+						> integer_1 / integer_2
+						=> 2
+						> integer_1 % integer_2
+						=> 13
+					</code>
+				</pre>
+			</blockquote>
+			<p>The <code>to_i</code> method can be used to convert non-integer objects into integers, and the <code>is_a?(Integer)</code> method can be used to check whether an object is an integer:</p>
+			<blockquote>
+				<pre>
+					<code>
+						> string_4 = "-9946"
+						=> "-9946"
+						> string_4.is_a?(Integer)
+						=> False
+						> integer_3 = string_4.to_i
+						=> -9946
+						> integer_3.is_a?(Integer)
+						=> True
+					</code>	
+				</pre>
+			</blockquote>
+			
+		</section>
+		<section id="array_container">
+			<h2>Arrays</h2>
+			<p>A Ruby Array is a collection of objects that are ordered and indexed. An Array can be created using the literal notation or by invoking the Array object:</p>
+			<blockquote>
+				<pre>
+					<code>
+						> array_1 = ["string", 45, True, ["hide", "seek"], 0.546]
+						=> ["string", 45, True, ["hide", "seek"], 0.546]
+						> array_2 = Array.new(4, "Default")
+						=> ["Default", "Default", "Default", "Default"]
+					</code>
+				</pre>
+			</blockquote>
+			<p>Objects stored in arrays can be accessed by their index position. This is true of single and multi-dimensional arrays:</p>
+			<blockquote>
+				<pre>
+					<code>
+						> array_1[0]
+						=> "string"
+						> array_1[1]
+						=> 45
+						> array_1[-1]
+						=> 0.546
+						> array_1[3][1]
+						=> "seek"
+					</code>
+				</pre>
+			</blockquote>
+			<p>The <code>unshift</code>, <code>shift</code>, <code>push</code>, and <code>pop</code> methods can be used to destructively add or remove elements from the start or end of an array respectively:
+			<blockquote>
+				<pre>
+					<code>
+						> array_2 = [2,3,4]
+						=> [2, 3, 4]
+						> array_2.unshift(1)
+						=> [1, 2, 3, 4]
+						> array_2.push(5)
+						=> [1, 2, 3, 4, 5]
+						> array_2.shift
+						=> 1
+						> array_2
+						=> [2, 3, 4, 5]
+						> array_2.pop
+						=> 5
+						> array_2
+						=> [2, 3, 4]
+					</code>	
+				</pre>
+			</blockquote>
+
+		</section>
+		<section id="hash_container">
+			<h2>Hashes</h2>
+			<p>Ruby Hashes are collections of key-value pairs. They are similar to Arrays except Arrays use integers to index elements and Hashes allow the use of any object type as the index (or key). A Hash can be created using the literal notation or by invoking a new instance of the Hash object:</p>
+			<blockquote>
+				<pre>
+					<code>
+						> hash_1 = {"Filmore" => 22, "Church" => "J", "Geary" => 38}
+						=> {
+							"Filmore" => 22,
+						        "Church" => "J",
+						          "Geary" => 38
+						     }
+						> hash_2 = Hash.new
+						=> {}
+					</code>
+				</pre>
+			</blockquote>
+			<p>Key-value pairs can be added to Hashes by defining the key and corresponding value. Similarly, the value of a key can be accessed using the key:</p>
+			<blockquote>
+				<pre>
+					<code>
+						> hash_1["Turk"] = 31
+						=> 31
+						> hash_1
+						=> {
+							"Filmore" => 22,
+						        "Church" => "J",
+						          "Geary" => 38,
+						             "Turk" => 31
+						     }
+						> hash_1["Geary"]
+						=> 38
+					</code>
+				</pre>
+			</blockquote>
+			<p>The <code>has_key?</code> and <code>has_value?</code> methods can be used to check if a Hash has a certain key or value respectively:</p>
+			<blockquote>
+				<pre>
+					<code>
+						> hash_1.has_key?("Church")
+						=> True
+						> hash_1.has_key?("Fulton")
+						=> False
+						> hash_1.has_value?(22)
+						=> True
+						> hash_1.has_value?(21)
+						=> False
+					</code>
+				</pre>
+			</blockquote>
+
+		</section>
+
+		<footer> <!-- This is the horizontal footer bar with breadcrumbs and copyright information -->
+				<p id="Bread_crumbs"><a href="../index.html">Home ></a> <a href="index.html"> Projects ></a> <a href="#"> Cheat Sheet ></a></p>
+				<p id="Copyright">Built 2016 by Afaan Naqvi</p>
+		</footer>
+	
+	</body>
+</html>
